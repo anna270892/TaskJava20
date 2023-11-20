@@ -17,7 +17,7 @@ public class DebitCardTest {
     }
     @BeforeAll
     static void setUpAll() {
-        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "D:\\IntelliJ\\TaskJava20\\driver\\chromedriver.exe");
     }
 
     @BeforeEach
