@@ -11,14 +11,13 @@ import java.util.List;
 public class DebitCardTest {
     private WebDriver driver;
 
-
     @BeforeAll
     public static void setupAll() {
         WebDriverManager.chromedriver().setup();
     }
     @BeforeAll
     static void setUpAll() {
-        System.setProperty("webdriver.chrome.driver", "C:\\tmp\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "driver/windows/chromedriver");
     }
 
     @BeforeEach
@@ -39,7 +38,7 @@ public class DebitCardTest {
     //отправка формы
     @Test
     void submittingTheForm() throws InterruptedException {
-        driver.get("http://0.0.0.0/:7777/");
+        driver.get("http://localhost:7777/");
         List<WebElement> elements = driver.findElements(By.className("input__control"));
         elements.get(0).sendKeys("Кочергина Анна");
         elements.get(1).sendKeys("+79500060445");
