@@ -11,6 +11,7 @@ import java.util.List;
 public class DebitCardTest {
     private WebDriver driver;
 
+
     @BeforeAll
     public static void setupAll() {
         WebDriverManager.chromedriver().setup();
