@@ -38,7 +38,7 @@ public class DebitCardTest {
     //отправка формы
     @Test
     void submittingTheForm() throws InterruptedException {
-        driver.get("http://localhost:7777/");
+        driver.get("http://0.0.0.0/:9999/");
         List<WebElement> elements = driver.findElements(By.className("input__control"));
         elements.get(0).sendKeys("Кочергина Анна");
         elements.get(1).sendKeys("+79500060445");
