@@ -30,5 +30,5 @@ test {
     useJUnitPlatform()
     // в тестах, вызывая `gradlew test -Dselenide.headless=true` будем передавать этот параметр в JVM (где его подтянет Selenide)
     // свойство selenide.headless используется в проектах на основе Selenide
-    systemProperty 'selenide.headless', System.getProperty('selenide.headless')
+    //systemProperty 'selenide.headless', System.getProperty('selenide.headless')
 }
