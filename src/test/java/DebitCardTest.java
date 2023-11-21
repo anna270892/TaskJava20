@@ -33,7 +33,7 @@ public class DebitCardTest {
     //отправка формы
     @Test
     void submittingTheForm() throws InterruptedException {
-        driver.get("http://0.0.0.0:9999/");
+        driver.get("http://localhost:7777/");
         List<WebElement> elements = driver.findElements(By.className("input__control"));
         elements.get(0).sendKeys("Кочергина Анна");
         elements.get(1).sendKeys("+79500060445");
@@ -46,7 +46,7 @@ public class DebitCardTest {
     //валидация поля "Фамилия Имя"
     @Test
     void fieldValidationFullName() throws InterruptedException {
-        driver.get("http://0.0.0.0:9999/");
+        driver.get("http://localhost:7777/");
         List<WebElement> elements = driver.findElements(By.className("input__control"));
         elements.get(0).sendKeys("111 111");
         elements.get(1).sendKeys("+79500060445");
@@ -59,7 +59,7 @@ public class DebitCardTest {
     //валидация поля "Телефон"
     @Test
     void fieldValidationPhone() throws InterruptedException {
-        driver.get("http://0.0.0.0:9999/");
+        driver.get("http://localhost:7777/");
         List<WebElement> elements = driver.findElements(By.className("input__control"));
         elements.get(0).sendKeys("Кочергина Анна");
         elements.get(1).sendKeys("Кочергина Анна");
@@ -72,7 +72,7 @@ public class DebitCardTest {
     //обязательно к заполнению поле "Фамилия Имя"
     @Test
     void requiredToFillOutFullName() throws InterruptedException {
-        driver.get("http://0.0.0.0:9999/");
+        driver.get("http://localhost:7777/");
         List<WebElement> elements = driver.findElements(By.className("input__control"));
         elements.get(0).sendKeys("");
         elements.get(1).sendKeys("");
@@ -85,7 +85,7 @@ public class DebitCardTest {
     //обязательно к заполнению поле "Телефон"
     @Test
     void requiredToFillOutPhone() throws InterruptedException {
-        driver.get("http://0.0.0.0:9999/");
+        driver.get("http://localhost:7777/");
         List<WebElement> elements = driver.findElements(By.className("input__control"));
         elements.get(0).sendKeys("Кочергина Анна");
         elements.get(1).sendKeys("");
@@ -98,7 +98,7 @@ public class DebitCardTest {
     //обязательно к заполнению поле "Фамилия Имя"
     @Test
     void asInThePassportFullName() throws InterruptedException {
-        driver.get("http://0.0.0.0:9999/");
+        driver.get("http://localhost:7777/");
         List<WebElement> elements = driver.findElements(By.className("input__control"));
         elements.get(0).sendKeys("Кочергина");
         driver.findElement(By.className("button")).click();
