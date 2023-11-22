@@ -30,6 +30,7 @@ public class DebitCardTest {
         driver = null;
     }
 
+
     //отправка формы
     @Test
     void submittingTheForm() throws InterruptedException {
